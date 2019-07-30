@@ -1,0 +1,257 @@
+
+/*UNIVERSAL*/
+
+html {
+  background: linear-gradient(347deg, rgba(251,250,255,1) 0%, rgba(246,238,241,1) 39%, rgba(206,228,249,1) 100%);
+}
+h1 {
+  font-family: "Raleway Thin", Helvetica, sans-serif;
+  font-size: 42px;
+  color: #a7aeb1;
+  padding: 5px;
+  margin-left: 100px;
+  position: relative;
+}
+h2 {
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-size: 24px;
+  color: #648da1;
+  text-transform: uppercase;
+  margin-right: 100px;
+  margin-left: 100px;
+  text-align: left;
+}
+nav {
+  font-family: "Raleway Light", Helvetica, sans-serif;
+  font-size: 18px;
+  color: #a7aeb1;
+  padding: 5px;
+/*  margin: 25px auto 500px; */
+  position: absolute;
+  top: 10px;
+  right: 100px;
+}
+.logo {
+  position: relative;
+  top: 10px;
+  left: 100px;
+}
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+a {
+  font-family: "Raleway Light", Helvetica, sans-serif;
+  font-size: 18px;
+  color: #a7aeb1;
+  text-decoration: none;
+}
+a:hover {
+  color: #648da1;
+}
+.active {
+  color: #648da1;
+}
+body {
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-size: 16px;
+  color: #4f5a5e;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+p {
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-size: 16px;
+  color: #4f5a5e;
+  padding: 5px;
+  line-height: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  position: relative;
+  text-align: justify;
+}
+.body-link {
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-size: 16px;
+  color: #4f5a5e;
+}
+th {
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-size: 24px;
+  color: #648da1;
+  text-transform: uppercase;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: left;
+  padding-left: 15px;
+}
+tr{
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-size: 16px;
+  color: #4f5a5e;
+  padding: 5px;
+  line-height: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  position: relative;
+  text-align: left;
+}
+td {
+  padding-left: 15px;
+  vertical-align: top;
+}
+
+.footer-text {
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-size: 10px;
+  color: #a7aeb1;
+  float: left;
+  padding: 1rem;
+  text-align: left;
+  margin-left: 100px;
+  margin-top: 12px;
+}
+.footer-icons {
+  float: right;
+  padding: 1rem;
+  text-align: right;
+  margin-right: 100px;
+}
+
+.footer-icons a>img {
+   margin-left:20px;
+ }
+
+/* HOME*/
+
+.home-background {
+  background: url(../images/home-image-aj.jpg)  no-repeat center center fixed;
+  background-size: cover;
+}
+
+.home-footer-text {
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-size: 10px;
+  color: #a7aeb1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: left;
+  margin-left: 100px;
+}
+.home-footer-icons {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: right;
+  margin-right: 100px;
+}
+
+.home-footer-icons a>img {
+   margin-left:20px;
+ }
+/*SHOP*/
+
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  margin-left: 100px;
+  overflow: hidden;
+}
+.filterDiv {
+  display: none;
+}
+.show {
+  display: block;
+}
+.grid-item {
+  color: #4f5a5e;
+  padding-left: 0px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 12px;
+  text-align: left;
+}
+.grid-item:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 10px 16px;
+  background-color: #a7aeb1;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #648da1
+}
+
+#myBtnContainer {
+  margin-left: 100px;
+}
+
+/*DISCOGRAPHY*/
+
+table.disco tr {
+line-height: 22px;
+}
+
+.disco-left {
+  position: relative;
+  float: left;
+  margin-left: 100px;
+  box-shadow: 5px 5px 5px #a7aeb1;
+}
+
+/*MEDIA*/
+
+.media-images {
+  margin-left: 100px;
+}
+.media-videos {
+  margin-left: 100px;
+}
+.media-item:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/*TOURS*/
+
+.tours-table {
+  margin-left: 100px;
+}
+
+/*ABOUT*/
+
+.about-image-right {
+  float: right;
+  padding: 10px 0px 20px 30px;
+}
+.about-image-left {
+  padding: 0px 20px 0px 0px;
+}
+.about-table {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.about-table td {
+  padding-right: 50px;
+  margin-left: 100px;
+}
+ul.about-list {
+  margin-left: 10px;
+  line-height: 30px;
+  list-style-type: circle;
+}

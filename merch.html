@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Root</title>
+  <link href="./assets/stylesheets/aj-css-styles.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="logo"><a href="/"><img src="./assets/images/aj-logo-blue.png" alt="Angus and Julia Stone" style="width:200px;height:95.5px;"></a>
+  </div>
+  <nav>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="discography.html">DISCOGRAPHY</a></li>
+    <li><a href="media.html">MEDIA</a></li>
+    <li><a class="active" href="merch.html">SHOP</a></li>
+    <li><a href="tours.html">TOURS</a></li>
+  </nav>
+    <h1>SHOP</h1>
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')">All</button>
+      <button class="btn" onclick="filterSelection('apparel')"> Apparel</button>
+      <button class="btn" onclick="filterSelection('accessories')"> Accessories</button>
+      <button class="btn" onclick="filterSelection('albums')"> Albums</button>
+    </div>
+    <div class="grid-container">
+    <div class="grid-item filterDiv albums">
+      <img src="./assets/images/merch/merch-albums-snow.png"/><br />Snow CD $25.99
+    </div>
+    <div class="grid-item filterDiv apparel">
+      <img src="./assets/images/merch/merch-apparel-shirt.png"/><br />Swoosh Red Ringer T-shirt $17.99
+    </div>
+    <div class="grid-item filterDiv apparel">
+      <img src="./assets/images/merch/merch-apparel-blue-shirt.png"/><br />Blue Ringer T-shirt $17.99
+    </div>
+    <div class="grid-item filterDiv albums">
+      <img src="./assets/images/merch/merch-albums.png"/><br />Snow Double Viynl $25.99
+    </div>
+    <div class="grid-item filterDiv accessories">
+      <img src="./assets/images/merch/merch-apparel-tote-bag.png"/><br />White Rainbow Tote Bag $12.99
+    </div>
+    <div class="grid-item filterDiv accessories">
+      <img src="./assets/images/merch/merch-apparel-hat.png" /><br />Angus & Julia Stone Hat $12.99
+    </div>
+    <div class="grid-item filterDiv apparel">
+      <img src="./assets/images/merch/merch-apparel-tshirt.png" /><br />White Rainbow T-shirt $19.99
+    </div>
+    <div class="grid-item filterDiv apparel">
+      <img src="./assets/images/merch/merch-apparel-tshirt-black.png"/><br />Black Rainbow T-shirt  $19.99
+    </div>
+    <div class="grid-item filterDiv accessories">
+      <img src="./assets/images/merch/merch-apparel-socks.png"/><br />White Rainbow Socks $9.99
+    </div>
+    <div class="grid-item filterDiv apparel">
+      <img src="./assets/images/merch/merch-apparel-tshirt-camping.png";/><br />Camper T-shirt $19.99
+    </div>
+    <div class="grid-item filterDiv accessories">
+      <img src="./assets/images/merch/merch-apparel-tote-bag-rainbow.png"/><br /> Rainbow Tote Bage  $13.99
+    </div>
+    <div class="grid-item filterDiv apparel">
+      <img src="./assets/images/merch/merch-apparel-shirt-blue.png"/><br />Absolutely Anything T-shirt $19.99
+    </div>
+  </div>
+
+  <p></p>
+
+      <div class="footer-text">2019 Angus & Julia Stone // Website by Samantha Sias</div>
+      <div class="footer-icons">
+        <a href=https://www.instagram.com/angusandjuliastone/><img src="./assets/images/social/instagram.png"/></a>
+        <a href=https://twitter.com/angusjuliastone/><img src="./assets/images/social/twitter.png"/></a>
+        <a href=https://www.facebook.com/AngusAndJulia/><img src="./assets/images/social/facebook.png"/></a>
+        <a href=https://www.youtube.com/user/AngusJuliaStoneVEVO/><img src="./assets/images/social/youtube.png"/></a>
+      </div>
+
+</body>
+    <script src="./assets/javascripts/jquery.min.js"></script>
+    <script src="./assets/javascripts/jquery.filterizr.min.js"></script>
+    <script src="./assets/javascripts/lodash.js"></script>
+    <script src="./assets/javascripts/mobile-menu.js"></script>
+  <script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+</html>
