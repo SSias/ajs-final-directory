@@ -261,19 +261,28 @@ h4 {
   position: relative;
 }
 p.flip-text {
-  font-family: "Raleway", Helvetica, sans-serif;
+  font-family: "Raleway Thin", Helvetica, sans-serif;
   font-size: 16px;
-  color: #4f5a5e;
+  color: #ffffff;
   line-height: 2px;
   margin-left: 50px;
   margin-right: 50px;
   text-align: center;
 }
 
-table.disco {
-  margin-left: 100px;
+table.disco tr {
+  line-height: 25px;
 }
-
+table.disco th {
+  line-height: 25px;
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-size: 16px;
+  color: #648da1;
+  padding-left: 50px
+}
+table.disco td {
+  padding-left: 50px;
+}
 
 /*.disco-left {
   position: relative;
