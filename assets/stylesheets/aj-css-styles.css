@@ -27,12 +27,12 @@ nav {
   color: #a7aeb1;
   padding: 5px;
   position: absolute;
-  top: 10px;
+  top: 25px;
   right: 100px;
 }
 .logo {
   position: relative;
-  top: 10px;
+  top: 25px;
   left: 100px;
 }
 nav li {
@@ -237,10 +237,10 @@ td {
   backface-visibility: hidden;
 }
 
-.flip-card-front {
+/*.flip-card-front {
   background-color: #bbb;
   color: black;
-}
+}*/
 
 .flip-card-back {
   background: rgb(150,189,210);
@@ -248,14 +248,15 @@ background: linear-gradient(355deg, rgba(150,189,210,1) 14%, rgba(100,141,161,1)
   transform: rotateY(180deg);
 }
 h3 {
-  font-family: "Raleway Light", Helvetica, sans-serif;
+  font-family: "Raleway", Helvetica, sans-serif;
   font-size: 30px;
   text-transform: uppercase;
   color: #ffffff;
   position: relative;
+  padding-top: 50px;
 }
 h4 {
-  font-family: "Raleway Light", Helvetica, sans-serif;
+  font-family: "Raleway Thin", Helvetica, sans-serif;
   font-size: 16px;
   color: #ffffff;
   position: relative;
@@ -269,7 +270,6 @@ p.flip-text {
   margin-right: 50px;
   text-align: center;
 }
-
 table.disco tr {
   line-height: 25px;
 }
@@ -308,7 +308,7 @@ table.disco td {
 
 /*TOURS*/
 
-.tours-table {
+table.tours {
   margin-left: 100px;
 }
 
@@ -331,6 +331,6 @@ table.disco td {
 }
 ul.about-list {
   margin-left: 10px;
-  line-height: 30px;
+  line-height: 25px;
   list-style-type: circle;
 }
