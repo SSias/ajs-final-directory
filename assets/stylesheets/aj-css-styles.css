@@ -312,6 +312,10 @@ table.tours {
   margin-left: 100px;
 }
 
+table.tours tr td {
+  padding-right: 50px;
+}
+
 /*ABOUT*/
 
 .about-image-right {
