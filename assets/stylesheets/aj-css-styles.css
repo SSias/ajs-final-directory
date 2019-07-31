@@ -14,6 +14,7 @@ h1 {
 }
 h2 {
   font-family: "Raleway", Helvetica, sans-serif;
+  font-weight: 600;
   font-size: 24px;
   color: #648da1;
   text-transform: uppercase;
@@ -237,11 +238,6 @@ td {
   backface-visibility: hidden;
 }
 
-/*.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}*/
-
 .flip-card-back {
   background: rgb(150,189,210);
 background: linear-gradient(355deg, rgba(150,189,210,1) 14%, rgba(100,141,161,1) 70%);
@@ -284,15 +280,6 @@ table.disco td {
   padding-left: 50px;
 }
 
-/*.disco-left {
-  position: relative;
-  float: left;
-  margin-left: 100px;
-  border-radius: 5px;
-  box-shadow: 2px 2px 2px 0px #c7d1d5;
-}*/
-
-
 /*MEDIA*/
 
 .media-images {
@@ -314,6 +301,11 @@ table.tours {
 
 table.tours tr td {
   padding-right: 50px;
+}
+
+table.tours tr:hover {
+  color: #648da1;
+  font-weight: 500;
 }
 
 /*ABOUT*/
